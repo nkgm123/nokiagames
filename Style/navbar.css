@@ -1,0 +1,29 @@
+.navbar ul{
+    list-style-type: none;
+    padding-top: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding-left: 490px;
+    padding-bottom: 25px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.navbar a:hover{
+    color: #1f75ff;
+}
+
+.navbar li{
+    float: left;
+}
+

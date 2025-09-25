@@ -1,0 +1,11 @@
+body{
+    background-color: #282828;
+}
+
+p{
+    color: white;
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 0;
+}
