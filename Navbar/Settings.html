@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="../Style/Navbar/navbar/navbar.css">
+    <link rel="stylesheet" href="../Style/buttons.css">
+    <link rel="stylesheet" href="../Style/Navbar/Settings/color-theme/color-theme.css">
+    <link rel="stylesheet" href="../Style/Navbar/Settings/color-theme-button/color-theme-button.css">
+    <link rel="stylesheet" href="../Style/Navbar/Settings/Titles/titles.css">
+    <script src="../Java/new-tab.js"></script>
+    <script src="../Java/color-theme.js"></script>
+    <script src="../Java/reset-color-theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Classroom</title>
+    <link rel="icon" type="image/png" href="../images/google-classroom-icon.svg">
+</head>
+<body>
+    
+    <center>
+        <h1>
+            SETTINGS
+        </h1>
+    </center>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../Navbar/Shooter.html">SHOOTER</a></li>
+            <li><a href="../Navbar/Driving.html">DRIVING</a></li>
+            <li><a href="../Navbar/PVP.html">PVP</a></li>
+            <li><a href="../index.html">ALL</a></li>
+            <li><a href="../Navbar/Simulator.html">SIMULATOR</a></li>
+            <li><a href="../Navbar/Skill.html">SKILL</a></li>
+            <li><a href="../Navbar/Settings.html">SETTINGS</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <h3>
+            BACKGROUND COLOR
+        </h3>
+    </center>
+    
+    <div class="container">
+    <h2>Pick a Color</h2>
+    <input type="color" id="colorPicker">
+    <div id="preview"></div>
+    <button onclick="setBackgroundColor(document.getElementById('colorPicker').value)">
+      Set Background
+    </button>
+  </div>
+
+    <center>
+        <h3>
+            PANIC BUTTTON
+        </h3>
+    </center>
+
+    <center>
+        <h4>
+            Press 'K' on your keyboard to open Gooogle Classroom
+        </h4>
+    </center>
+</body>
+</html>
