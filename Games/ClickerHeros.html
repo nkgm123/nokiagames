@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="../Style/home.css">
+<link rel="stylesheet" href="../Style/navbar.css">
+<link rel="stylesheet" href="../Style/buttons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="../Java/color-theme.js" defer></script>
+<script src="../Java/new-tab.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Classroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        iframe {
+            width: 85%;
+            height: 800px;
+            border: 0px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .fullscreen-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .fullscreen-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* CSS for the iframe when it is in fullscreen mode */
+        #myIframe:fullscreen {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Vendor-prefixed versions for cross-browser compatibility */
+        #myIframe:-webkit-full-screen {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #myIframe:-moz-full-screen {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p>
+            CLICKERHEROS
+        </p>
+    </center>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../Navbar/Shooter.html">SHOOTER</a></li>
+            <li><a href="../Navbar/Driving.html">DRIVING</a></li>
+            <li><a href="../Navbar/PVP.html">PVP</a></li>
+            <li><a href="../index.html">ALL</a></li>
+            <li><a href="../Navbar/Simulator.html">SIMULATOR</a></li>
+            <li><a href="../Navbar/Skill.html">SKILL</a></li>
+            <li><a href="../Navbar/Settings.html">SETTINGS</a></li>
+        </ul>
+    </nav>
+    
+    <iframe id="myIframe" src="https://nintendoboi222.github.io/games/clickerheros/" allowfullscreen="true" frameborder="0"></iframe>
+    <br>
+    <button class="fullscreen-button" onclick="goFullscreen()">Go Fullscreen</button>
+
+    <script>
+        function goFullscreen() {
+            const iframe = document.getElementById('myIframe');
+            if (iframe) {
+                if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                } else if (iframe.mozRequestFullScreen) { /* Firefox */
+                    iframe.mozRequestFullScreen();
+                } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                    iframe.webkitRequestFullscreen();
+                } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+                    iframe.msRequestFullscreen();
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
