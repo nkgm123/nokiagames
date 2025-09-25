@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    padding: 40px;
+    transition: background-color 0.4s ease;
+}
+.container {
+    max-width: 325px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#preview {
+    height: 100px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
